@@ -10,64 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bxslider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>할리스</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        /* 기본스타일 */
-        .clearfix::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
-        :root{
-            font-family: 'Roboto', 'Noto Sans KR', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            color: #666666;
-            /* line-height: 1.5em; */
-        }
-        .container{
-            width: 960px;
-            margin: 0 auto;
-            padding: 0 12px;
-        }
-        /* 스킵메뉴 */
-        .skip-menu a{
-            display: block;
-            width: 0;
-            height: 0;
-            /* padding: 12px; */
-            background-color: #666666;
-            font-weight: 900;
-            font-size: 32px;
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-        }
-        .skip-menu a:focus{
-            width: auto;
-            height: auto;
-            padding: 12px;
-        }
-
-        /* wrapper style */
-        .wrap{
-            overflow: hidden;
-        }
-
-        /* header style */
-        .header{
-            border-bottom: 2px solid #ba000c;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <!-- 스킵메뉴 -->
     <div class="skip-menu">
-        <a href="#franchise">플랜차이즈 바로가기</a>
-        <a href="#menbership">할리스 멤버십 바로가기</a>
+        <a href="#fran">플랜차이즈 바로가기</a>
+        <a href="#memb">할리스 멤버십 바로가기</a>
         <a href="#live">할리스 라이브 바로가기</a>
     </div>
 
@@ -94,6 +45,7 @@
                         <ul>
                             <li><a href="#">멤버십 로그인</a></li>
                             <li><a href="#">멤버십 가입</a></li>
+                            <li><a href="#">고객센터</a></li>
                             <li><a href="#">English</a></li>
                             <li><a href="#">중문</a></li>
                         </ul>
@@ -141,11 +93,208 @@
                 </div>
             </div>
         </header>
+        <!-- slider -->
+        <section class="sec main-slider">
+            <h2 class="sec-tit hidden-tit">메인 슬라이더</h2>
+            <div class="container">
+                <div class="contents">
+                    <div class="slider">
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner01.jpg" alt="메인배너1"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner02.jpg" alt="메인배너2"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner03.jpg" alt="메인배너3"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner04.jpg" alt="메인배너4"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner05.jpg" alt="메인배너5"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fran-mall-sto -->
+        <section class="sec fran-mall-sto">
+            <h2 class="sec-tit hidden-tit">
+                플랜차이즈,쇼핑몰,지점찾기
+            </h2>
+            <div class="container">
+                <div class="contents grid-container" id="fran">
+                    <article class="art franchise">
+                        <h3><li><a href="#"><i class="fas fa-user-tie"></i> Franchise</h3>
+                            <div class="img-box">
+                                <a href="#"><img src="./images/img-fran.gif" alt="플랜차인즈"></a>
+                            </div>
+                    </article>
+                    <article class="art mall">
+                        <h3><li><i class="fas fa-gift"></i> HOLLYS Mall</h3>
+                        <p>할리스의 다양한 상품들을 만나보세요</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/img-mall01.png" alt="생딸기 주스">
+                                    </div>
+                                    <p>생딸기 주스</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/img-mall03.png" alt="딸기 생크림">
+                                    </div>
+                                    <p>딸기 생크림</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/img-mall02.png" alt="딸기바스크치즈">
+                                    </div>
+                                    <p>딸기바스크치즈</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="art store">
+                        <h3><li><a href="#"><i class="fas fa-map-marker-alt"></i> Store</h3>
+                            <div class="img-box">
+                                <a href="#"><img src="./images/img-sto.jpg" alt="매장찾기"></a>
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="sec banner" id="memb">
+            <h2 class="sec-tit hidden-tit">멤버십 / 카드 바로가기</h2>
+            <div class="container">
+                <div class="contents grid-container">
+                    <div class="img-box"><a href="#"><img src="./images/img-banner01.jpg" alt="할리스 멤버십"></a></div>
+                    <div class="img-box"><a href="#"><img src="./images/img-banner02.jpg" alt="할리스 카드"></a></div>
+                </div>
+            </div>
+        </section>
+        <!-- notice -->
+        <section class="sec notice">
+            <h2 class="sec-tit hidden-tit">게시판</h2>
+            <div class="container">
+                <div class="contents grid-container">
+                    <article class="art academy">
+                        <h3><i class="fas fa-pencil-alt"></i> Coffee Academy</h3>
+                        <p><a href="#">할리스 아카데미와 함께하는 즐거운 커피 여행!</a></p>
+                        <p><a href="#"><i class="fas fa-play-circle"></i> 바로가기</a></p>
+                    </article>
+                    <article class="art solution">
+                        <h3><i class="fas fa-briefcase"></i> Hollys B2B Solution</h3>
+                        <p><a href="#">할리스 F&B는 20년의 커피 노하우를 기반으로 한 할리스 B2B 솔루션을 소개합니다.</a></p>
+                        <p><a href="#"><i class="fas fa-play-circle"></i> 바로가기</a></p>
+                    </article>
+                    <article class="art news">
+                        <h3><i class="fas fa-volume-up"></i> News</i></h3>
+                        <ul>
+                            <li class="clear-fix">
+                                <a href="#">개인정보 처리방침 변경안내</a>
+                                <a href="#">10-06</a>
+                            </li>
+                            <li class="clear-fix">
+                                <a href="#">중간배당 기준일 공고</a>
+                                <a href="#">10-14</a>
+                            </li>
+                            <li class="clear-fix">
+                                <a href="#">할리스카드 이용약관 변경안내</a>
+                                <a href="#">11-09</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="art quick-icons">
+                        <h3 class="hidden-tit">창업안내,아카데미 강좌,고객문의 바로가기</h3>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/icon-logo.gif" alt="창업안내">
+                                    </div>
+                                    <p>창업안내</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <div class="circle">시계</div>
+                                    </div>
+                                    <p>아카데미 강좌</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <div class="bubble">
+                                            <div class="dot">말풍선</div>
+                                        </div>
+                                    </div>
+                                    <p>고객문의</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- line -->
+        <section class="sec line">
+            <div class="container">
+                <div class="contents">구분선</div>
+            </div>
+        </section>
+        <!-- hollys live -->
+        <section class="sec live" id="live">
+            <div class="container">
+                <div class="contents grid-container">
+                    <h2 class="sec-tit">HOLLYS Live</h2>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-blogger"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <h2 class="sec-tit hidden-tit">바닥글</h2>
+            <div class="container">
+                <div class="contents">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">서비스이용약관</a></li>
+                            <li><a href="#">멤버십이용약관</a></li>
+                            <li><a href="#">할리스카드이용약관</a></li>
+                            <li><a href="#">고객문의</a></li>
+                            <li><a href="#">고객설문</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">BI 소개</a></li>
+                        </ul>
+                    </nav>
+                    <address>
+                        법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호
+                        <br>
+                        주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)
+                        <br>
+                        COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
     </section>
-    <script>
-        $(document).ready(function(){
-            $('.slider').bxSlider();
-        });
-    </script>
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main-slide.js"></script>
 </body>
 </html>
